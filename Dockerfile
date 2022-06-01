@@ -1,2 +1,2 @@
-FROM nginx:latest
-COPY . /usr/share/nginx/html/
+FROM tomcat:latest
+COPY . /usr/share/tomcat/html/
