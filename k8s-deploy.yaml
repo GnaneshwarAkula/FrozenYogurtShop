@@ -15,7 +15,7 @@ spec:
     spec:
       containers:
       - name: ovs
-        image: jaibw/website004:username
+        image: gnaakula/newweb001:username
         ports:
         - containerPort: 80 
 
