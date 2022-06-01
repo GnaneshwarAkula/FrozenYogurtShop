@@ -3,13 +3,13 @@ pipeline {
     stages {
         stage('Build') {
             steps {                
-                git 'https://github.com/Jaibw/FrozenYogurtShop.git'
-                sh "docker build -t jaibw/website004:${env.BUILD_TAG} ."
+                git 'https://github.com/GnaneshwarAkula/FrozenYogurtShop.git'
+                sh "docker build -t gnaakula/newweb001:${env.BUILD_TAG} ."
             }
         }
         stage('Push') {
             steps {
-                sh "docker push jaibw/website004:${env.BUILD_TAG}"
+                sh "docker push gnaakula/newweb001:${env.BUILD_TAG}"
             }
         }
         stage('Deploy') {
